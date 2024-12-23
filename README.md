@@ -23,7 +23,7 @@ JSON (JavaScript Object Notation) هو فورمات خفيف لتبادل الب
 
 ### مثال بسيط:
 
-```
+```json
 [
   {
     "type": "h1",
@@ -65,7 +65,7 @@ JSON (JavaScript Object Notation) هو فورمات خفيف لتبادل الب
 
 ### الكود الأساسي لتحويل JSON لعناصر HTML
 
-```
+```javascript
 import React from 'react';
 import editorData from './editor.json';
 
@@ -98,7 +98,7 @@ export default App;
 
 ممكن تعدل الكود عشان يدعم الصور باستخدام الشرط ده:
 
-```
+```javascript
 const renderElement = (item) => {
   if (item.type === 'img') {
     return <img {...item.attributes} key={item.key} />;
@@ -109,7 +109,7 @@ const renderElement = (item) => {
 
 ### تحديث العرض الرئيسي:
 
-```
+```javascript
 const App = () => {
   return (
     <div>
@@ -140,7 +140,7 @@ const App = () => {
 
 #### Endpoint لحفظ البيانات:
 
-```
+```javascript
 app.post('/api/save', async (req, res) => {
   const content = new ContentModel(req.body);
   await content.save();
@@ -150,7 +150,7 @@ app.post('/api/save', async (req, res) => {
 
 #### استرجاع البيانات:
 
-```
+```javascript
 app.get('/api/content', async (req, res) => {
   const content = await ContentModel.find();
   res.send(content);
@@ -159,7 +159,7 @@ app.get('/api/content', async (req, res) => {
 
 ### التكامل مع React:
 
-```
+```javascript
 import axios from 'axios';
 
 const fetchContent = async () => {
