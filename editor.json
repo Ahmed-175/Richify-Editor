@@ -1,0 +1,53 @@
+[
+  {
+    "type": "h1",
+    "content": "MERN Stack Editor",
+    "attributes": {
+      "style": {
+        "color": "red",
+        "fontSize": "32px"
+      }
+    }
+  },
+  {
+    "type": "p",
+    "content": "This is a paragraph for MERN stack editor.",
+    "attributes": {
+      "style": {
+        "color": "blue",
+        "fontSize": "16px"
+      }
+    }
+  },
+  {
+    "type": "img",
+    "content": "",
+    "attributes": {
+      "src": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+      "alt": "Google Logo",
+      "style": {
+        "width": "200px"
+      }
+    }
+  },
+  {
+    "type": "a",
+    "content": "Visit Google",
+    "attributes": {
+      "href": "https://www.google.com",
+      "style": {
+        "color": "green",
+        "textDecoration": "none"
+      }
+    }
+  },
+  {
+    "type": "ul",
+    "content": "",
+    "attributes": {},
+    "children": [
+      { "type": "li", "content": "Item 1", "attributes": {} },
+      { "type": "li", "content": "Item 2", "attributes": {} }
+    ]
+  }
+]
